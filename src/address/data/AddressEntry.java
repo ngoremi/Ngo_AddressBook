@@ -1,4 +1,4 @@
-package data;
+package address.data;
 
 public class AddressEntry {
     String firstName, lastName, street, city, state, zip, telephone, email;
@@ -27,12 +27,13 @@ public class AddressEntry {
     }
 
     public String toString(){
-        return "\n First Name: " + firstName + "\n Last Name: " + lastName + "\n Street: " + street + "\n City:"  + city + "\n State: " + state + "\n Zip: " + zip + "\n Telephone: " + telephone + "\n Email: " + email;
+        return ": " + firstName + " " + lastName + "\n" + street + "\n"  + city + ", " + state + " " + zip + "\n" + email + "\n" + telephone;
     }
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
+
     public String getFirstName() {
         return firstName;
     }
