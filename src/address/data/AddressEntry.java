@@ -1,21 +1,26 @@
 package address.data;
 
 public class AddressEntry {
+
+    //initializing the contact details
     String firstName, lastName, street, city, state, zip, telephone, email;
 
+    //initializing the Address entry contact details
     public AddressEntry(){
-        firstName = "Jane";
-        lastName = "Doe";
-        street = "1234";
-        city = "Fremont";
-        state = "CA";
-        zip = "12345";
-        telephone = "1234567890";
-        email = "xx@email.com";
+        firstName = getFirstName();
+        lastName = getLastName();
+        street = getStreet();
+        city = getCity();
+        state = getState();
+        zip = getZip();
+        telephone = getTelephone();
+        email = getEmail();
 
     }
 
+    //used for inputting already set information into an entry, like loading from file
     public AddressEntry(String firstName, String lastName, String street, String city, String state, String zip, String telephone, String email ){
+        //setting the constructors
         setFirstName(firstName);
         setLastName(lastName);
         setStreet(street);
@@ -26,10 +31,12 @@ public class AddressEntry {
         setEmail(email);
     }
 
+    //formats the output of the entry
     public String toString(){
         return ": " + getFirstName() + " " + getLastName() + "\n" + getStreet() + "\n"  + getCity() + ", " + getState() + " " + getZip() + "\n" + getEmail() + "\n" + getTelephone();
     }
 
+    //set+get methods for constructors
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
