@@ -15,7 +15,7 @@ import java.util.*;
 public class Menu {
 
 
-    //This displays the Menu for the user to see and decide their actions
+    //This displays the Menu for the user to see and decide their actions.
     public static void displayMenu(){
         System.out.println("\n\n**********************\nPlease Enter Your Menu Selection: \n a) Loading From File\n b) Adding Entry\n c) Removing Entry\n d) Find Entry\n e) Listing\n f) EXIT\n**********************");
     }
