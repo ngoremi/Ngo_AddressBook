@@ -1,3 +1,13 @@
+/*
+ *
+ * @author Remi Ngo
+ * @since February 2024
+ *
+ * purpose: To hold and initialize address entry data
+ *
+ * */
+
+
 package address.data;
 
 public class AddressEntry {
@@ -18,7 +28,9 @@ public class AddressEntry {
 
     }
 
-    //used for inputting already set information into an entry, like loading from file
+    /*used for inputting already set information into an entry, like loading from file
+    * @param firstName is the first name, lastName is the last name, street is the street, city is the city, state is the state, zip is the zip, telephone is the phone number, email is the email
+    * */
     public AddressEntry(String firstName, String lastName, String street, String city, String state, String zip, String telephone, String email ){
         //setting the constructors
         setFirstName(firstName);

@@ -1,23 +1,36 @@
-package address;//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+/*
+ *
+ * @author Remi Ngo
+ * @since February 2024
+ *
+ * purpose: To perform actions activated from Menu
+ *
+ * */
+
+
+package address;
 
 import address.data.AddressBook;
 import address.data.AddressEntry;
 
 import java.util.*;
 
+
 class AddressBookApplication {
 
     public static void main(String[] arg){
 
-        //creates a new address book for every run
 
+        /*
+            creates a new address book for every run
+            @return initialized AddressBook
+         */
         AddressBook ab = new AddressBook();
 
         //looks for an input for the incoming Menu display
         Scanner input = new Scanner(System.in);
 
-
+        //keeps the Menu open even after each action
         while (true){
 
             //displays the Main Menu
@@ -34,6 +47,7 @@ class AddressBookApplication {
                     //asks user for file name
                     System.out.println("Enter File Name: ");
                     String File = inputFileName.nextLine();
+
                     //performs loading file, takes the filename and the address book
                     ab.loadAddressEntries(ab, File);
 

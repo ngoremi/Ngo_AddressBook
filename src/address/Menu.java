@@ -1,6 +1,17 @@
+/*
+ *
+ * @author Remi Ngo
+ * @since February 2024
+ *
+ * purpose: To display Menu and prompts for user input
+ *
+ * */
+
+
 package address;
 
 import java.util.*;
+
 public class Menu {
 
 
@@ -11,7 +22,9 @@ public class Menu {
 
     // Below are prompts used in the "Adding" menu action.
 
-    //Asks user for first name, takes any input of any type but is converted to String
+    /*Asks user for first name, takes any input of any type but is converted to String
+    * @return user input for first name
+    * */
     public static String prompt_FirstName() {
         //Scanner to look for user input
         Scanner input = new Scanner(System.in);
@@ -20,35 +33,45 @@ public class Menu {
         return input.nextLine();
     }
 
-    //Asks user for last name, takes any input of any type but is converted to String
+    /*Asks user for last name, takes any input of any type but is converted to String
+    * @return user input for last name
+    * */
     public static String prompt_LastName(){
         Scanner input = new Scanner(System.in);
         System.out.println("Last Name:");
         return input.nextLine();
     }
 
-    //Asks user for Street details, takes any input of any type but is converted to String
+    /*Asks user for Street details, takes any input of any type but is converted to String\
+    * @return user input for street
+    * */
     public static String prompt_Street(){
         Scanner input = new Scanner(System.in);
         System.out.println("Street");
         return input.nextLine();
     }
 
-    //Asks user for City details, takes any input of any type but is converted to String
+    /*Asks user for City details, takes any input of any type but is converted to String
+    * @return user input for city
+    * */
     public static String prompt_City(){
         Scanner input = new Scanner(System.in);
         System.out.println("City:");
         return input.nextLine();
     }
 
-    //Asks user for State name, takes any input of any type but is converted to String
+    /*Asks user for State name, takes any input of any type but is converted to String
+    * @return user input for state
+    * */
     public static String prompt_State(){
         Scanner input = new Scanner(System.in);
         System.out.println("State:");
         return input.nextLine();
     }
 
-    //Asks user for Zip code, only takes Integer input but is converted to String in the end.
+    /*Asks user for Zip code, only takes Integer input but is converted to String in the end.
+    * @return user input for zip
+    * */
     public static String prompt_Zip(){
 
         //scanner for user input
@@ -84,7 +107,9 @@ public class Menu {
         return input.nextLine();
     }
 
-    //Asks user for Telephone number, only takes Integer input but is converted to String in the end.
+    /*Asks user for Telephone number, only takes Integer input but is converted to String in the end.
+    * @return user input for telephone
+    * */
     public static String prompt_Telephone(){
         Scanner input = new Scanner(System.in);
 
@@ -109,7 +134,9 @@ public class Menu {
         return input.nextLine();
     }
 
-    //Asks user for first name, takes any input of any type but is converted to String
+    /*Asks user for first name, takes any input of any type but is converted to String
+    * @return user input for email
+    * */
     public static String prompt_Email(){
         Scanner input = new Scanner(System.in);
         System.out.println("Email:");

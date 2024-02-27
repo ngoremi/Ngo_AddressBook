@@ -1,3 +1,12 @@
+/*
+ *
+ * @author Remi Ngo
+ * @since February 2024
+ *
+ * purpose: To create an modifiable Address Book
+ *
+ * */
+
 package address.data;
 
 import java.io.BufferedReader;
@@ -5,17 +14,22 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
 
+
 public class AddressBook {
 
     //Creates an Address Book using the list structure
     public List<AddressEntry> AddressEntryList;
 
-    //Creates the list under Address book
+    /*Creates the list under Address book
+    * @return A new Array List object for the Address Book
+    * */
     public AddressBook() {
         this.AddressEntryList = new ArrayList<>();
     }
 
-    //Adds an entry into the address book
+    /*Adds an entry into the address book
+    * @param addressEntry is the entry that is intended to be added to the Address book
+    * */
     public void addAddressEntry(AddressEntry addressEntry) {
         //uses the add method to into the Address Book
         AddressEntryList.add(addressEntry);
@@ -24,13 +38,20 @@ public class AddressBook {
         Collections.sort(AddressEntryList, (a,b) -> a.getLastName().compareToIgnoreCase(b.getLastName()));
     }
 
-    //Removes an entry from the address book
+    /*Removes an entry from the address book
+    * @param addressEntry is the entry that is intended to be removed from the Address book
+    * */
+
     public void removeAddressEntry(AddressEntry addressEntry) {
         //uses the remove method
         AddressEntryList.remove(addressEntry);
     }
 
-    //Finds a contact in the address book
+    /*Finds a contact in the address book
+    * @param lastName is the last name of the contact
+    * @return addressEntry if the entry exists
+    * @return null if the entry doesn't exit
+    * */
     public AddressEntry findAddressEntry(String lastName){
         // for loop to look through the address book
         for (AddressEntry addressEntry: AddressEntryList){
@@ -44,7 +65,10 @@ public class AddressBook {
         return null;
     }
 
-    //Loads all the entries from the Address book
+    /*Loads all the entries from the Address book
+    * @param ab is the Address Book
+    * @param filename is the name of the file loaded in
+    * */
     public static void loadAddressEntries(AddressBook ab, String filename){
 
         //initializing the variables to print
