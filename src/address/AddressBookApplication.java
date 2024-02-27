@@ -4,7 +4,7 @@ package address;//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 import address.data.AddressBook;
 import address.data.AddressEntry;
 
-import java.util.Scanner;
+import java.util.*;
 
 class AddressBookApplication {
 
@@ -21,6 +21,11 @@ class AddressBookApplication {
 
             switch(menuInput){
                 case "a":
+                    Scanner inputFileName = new Scanner(System.in);
+                    System.out.println("Enter File Name: ");
+                    String File = inputFileName.nextLine();
+                    ab.loadAddressEntries(ab, File);
+                    break;
 
                 case "b":
                     AddressEntry newEntry = new AddressEntry();
@@ -45,7 +50,9 @@ class AddressBookApplication {
                     Scanner findLastName = new Scanner(System.in);
                     System.out.println("Enter in Last Name of contact to find:");
                     AddressEntry foundEntry = ab.findAddressEntry(findLastName.nextLine());
-                    System.out.println(foundEntry.toString());
+                    if (foundEntry != null){
+                        System.out.println(foundEntry.toString());
+                    }
                     break;
 
                 case "e":
