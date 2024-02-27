@@ -40,7 +40,6 @@ public class AddressBook {
             String[] entryElements = new String[8];
             while ((line = file_input.readLine()) != null){
                 entryElements[elementCounter] = line;
-                System.out.println(line);
                 switch(elementCounter){
                     case 0:
                         firstName = entryElements[0];

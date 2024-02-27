@@ -27,7 +27,7 @@ public class AddressEntry {
     }
 
     public String toString(){
-        return ": " + firstName + " " + lastName + "\n" + street + "\n"  + city + ", " + state + " " + zip + "\n" + email + "\n" + telephone;
+        return ": " + getFirstName() + " " + getLastName() + "\n" + getStreet() + "\n"  + getCity() + ", " + getState() + " " + getZip() + "\n" + getEmail() + "\n" + getTelephone();
     }
 
     public void setFirstName(String firstName) {
