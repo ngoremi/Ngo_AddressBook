@@ -90,7 +90,7 @@ public class Menu {
             //breaks out of the loops when the input given is an integer
             if (input.hasNextInt()){
                 userInput = input.nextInt();
-                isInt = true;
+                isInt = false;
             }
             //continues asking if still not an Integer
             else{
@@ -113,19 +113,19 @@ public class Menu {
         Scanner input = new Scanner(System.in);
 
         int userInput = 0;
-        boolean isInt = false;
+        boolean isInt = true;
 
         do{
             System.out.println("Telephone:");
             if (input.hasNextInt()){
                 userInput = input.nextInt();
-                isInt = true;
+                isInt = false;
             }
             else{
                 System.out.println("Please Enter a Number. Telephone:");
                 input.next();
             }
-        } while (!isInt);
+        } while (isInt);
 
         String convert = Integer.toString(userInput);
 

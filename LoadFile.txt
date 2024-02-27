@@ -5,7 +5,7 @@ Hayward
 Ca
 28666
 lynne.grewe@csueastbay.edu
-510-885-4167
+5108854167
 Butch
 Grewe
 Bay Avenue
@@ -13,4 +13,28 @@ Capitoal
 Ca
 99999
 bg@gmail.com
-415-389-1239
+4153891239
+Remi
+Ngo
+123 Street
+San Jose
+CA
+12345
+rngo4@horizon.csueastbay.edu
+1234567890
+RandomName1
+LastName1
+456 Street
+Berkley
+CA
+67890
+random@email.com
+1234567890
+RandomName2
+LastName2
+678 Street
+Fremont
+CA
+67831
+anotherrandom@email.com
+24564323456
