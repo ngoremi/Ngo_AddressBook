@@ -104,7 +104,7 @@ public class Menu {
         String convert = Integer.toString(userInput);
 
         //returns the output converted into a string
-        return convert();
+        return convert;
     }
 
     /*Asks user for Telephone number, only takes Integer input but is converted to String in the end.
@@ -131,7 +131,7 @@ public class Menu {
 
         String convert = Integer.toString(userInput);
 
-        return convert();
+        return convert;
     }
 
     /*Asks user for first name, takes any input of any type but is converted to String
