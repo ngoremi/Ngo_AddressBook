@@ -97,8 +97,7 @@ public class Menu {
                 System.out.println("Please Enter a Number. Zip:");
                 input.next();
             }
-        }
-        while (isInt);
+        } while (isInt);
 
         //converts the integer to a string
         String convert = Integer.toString(userInput);
@@ -126,8 +125,7 @@ public class Menu {
                 System.out.println("Please Enter a Number. Telephone:");
                 input.next();
             }
-        }
-        while (!isInt);
+        } while (!isInt);
 
         String convert = Integer.toString(userInput);
 
